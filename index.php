@@ -1,5 +1,5 @@
 <?php
-$backgroundImage = "img/sea.jpg";
+    $backgroundImage = "img/sea.jpg";
 
 // API call goes here
 if(isset($_GET['keyword'])) {
@@ -52,7 +52,7 @@ if(isset($_GET['keyword'])) {
         <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
             <ol class="carousel-indicators">
                 <?php 
-                for($i = 0; $i < 5; $i++) {
+                for($i = 0; $i < 7; $i++) {
                     echo "<li data-target='#carousel-example-generic' data-slide-to='$i'";
                     echo ($i == 0)?" class='active'": "";
                     echo "></li>";
@@ -61,7 +61,7 @@ if(isset($_GET['keyword'])) {
             </ol>
             <div class="carousel-inner" role="listbox">
                 <?php
-                    for($i = 0; $i < 5; $i++) {
+                    for($i = 0; $i < 7; $i++) {
                         do {
                             $randomIndex = rand(0,count($imageURLs));
                         } while(!isset($imageURLs[$randomIndex]));
